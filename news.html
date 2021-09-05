@@ -6,11 +6,14 @@
     <script>
         alert("Subscribe to notifications to be the first to learn about the latest news! :)")
         Notification.requestPermission(function(permission) {});
-        var mailNotification = new Notification("Андрей Чернышёв", {
+        var mailNotification = new Notification("News!", {
             tag: "ache-mail",
-            body: "Привет, высылаю материалы по проекту...",
-            icon: "http://habrastorage.org/storage2/cf9/50b/e87/cf950be87f8c34e63c07217a009f1d17.jpg"
+            body: "Hi! There is something new... Lets check!",
+            icon: ""
         });
+        mailNotification.onclick = () => {
+            alert("hi")
+        }
     </script>
 
     <meta charset="UTF-8">
