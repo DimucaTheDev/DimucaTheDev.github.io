@@ -2,6 +2,14 @@
 <html lang="en">
 
 <head>
+
+    <script>
+        alert("Subscribe to notifications to be the first to learn about the latest news! :)")
+        Notification.requestPermission(function(permission) {});
+        var notification = new Notification("News!", "");
+        notification.dispatchEvent();
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
